@@ -1,10 +1,10 @@
-# CS193HW4: Git
+# CS193HW3: Git
  
 ## What is this assignment
 In this assignment, you will be working on the basics of git. Git, as you heard from lecture, is amazing for keeping track of source code. The website you're currently reading this on, and for all the past homeworks as well, is GitHub. There **is** a difference between Git and GitHub! Think of Git as the local repository and GitHub as the central repository. The local repository is what you have on your computer. So when you transfer something from your local repository, you are transferring it to GitHub. In this homework, you will be practicing source control using Git and managing your local and central repository. Afterward, you will be answering questions and turning those answers in on GitHub. 
  
 ## When is this due?
-This homework will be due on Wednesday, 03/11
+This homework will be due on Wednesday, 10/16
  
 ## When will I know I'm done?
 Advice: read the steps!!
@@ -15,9 +15,9 @@ Keep in mind: **For us to see your work it has to be on GitHub, aka the central 
  
 ## Step 1: Clone the repository. TODOs exist here
 ### TODO 1 
-As you've done before, everything git related usually starts with a clone. Once you have created your copy of the Homework 4 repository (`homework-4-<your GitHub username>`), **run** the command `git clone https://github.com/Purdue-CS193/homework-4-<your GitHub username>.git`. As you know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
+As you've done before, everything git related usually starts with a clone. Once you have created your copy of the Homework 3 repository (`homework-3-<your GitHub username>`), **run** the command `git clone https://github.com/Purdue-CS193/homework-3-<your GitHub username>.git`. As you know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
  
-Now if you run `ls`, you should see a directory called `homework-4-<your GitHub username>`. `cd` into this directory and run `ls` again and you should see all the same files that GitHub shows in the browser for this repository. 
+Now if you run `ls`, you should see a directory called `homework-3-<your GitHub username>`. `cd` into this directory and run `ls` again and you should see all the same files that GitHub shows in the browser for this repository. 
  
 ## Step 2: Status
 One of the most frequently used git commands is `git status`. Any time you are inside a git repository (i.e. your current directory or one of its parents is an initialized git repository), you can run `git status` to see precisely what state your repository is in. 
@@ -31,14 +31,14 @@ The second line `Your branch is up to date with 'origin/master'` tells you that 
 The third line `nothing to commit, working tree clean` tells you that you have not made any changes to the files in the repository at this point.
  
 ## Step 3: Sync Local with Remote. TODOs exist in this step!
-It is important to understand how useful git and GitHub can be for collaboration. For a moment, let's pretend that you and someone else are both working on solving Homework 4 together. We will **simulate** someone else pushing changes to Homework 4 while you are working on it locally. To do this, make sure you have already cloned the Homework 4 repo onto your local machine. Next, in your web browser, navigate to your Homework 4 repository on GitHub. 
+It is important to understand how useful git and GitHub can be for collaboration. For a moment, let's pretend that you and someone else are both working on solving Homework 3 together. We will **simulate** someone else pushing changes to Homework 4 while you are working on it locally. To do this, make sure you have already cloned the Homework 3 repo onto your local machine. Next, in your web browser, navigate to your Homework 3 repository on GitHub. 
  
 ### TODO 2
 Open the `answers.txt` file in GitHub from the web browser and under `Part 1`, write a message to yourself. This can be anything you want. Go ahead and commit this message to the `master` branch. Again, make sure this change is made from GitHub in your web browser!! 
  
-Now, locally in your terminal, run `git status` again in the Homework 4 directory. Notice the output this time! Wait... it's still the same. Why does `git status` tell us  `Your branch is up to date with 'origin/master'` if we just made a change to the `master` branch on GitHub?
+Now, locally in your terminal, run `git status` again in the Homework 3 directory. Notice the output this time! Wait... it's still the same. Why does `git status` tell us  `Your branch is up to date with 'origin/master'` if we just made a change to the `master` branch on GitHub?
  
-Even though we made a change to a file in the remote server (GitHub), we need to tell git that it needs to `fetch` new information from the remote server before it will know that we made a change. Run `git fetch` in the Homework 4 directory and then `git status` again. 
+Even though we made a change to a file in the remote server (GitHub), we need to tell git that it needs to `fetch` new information from the remote server before it will know that we made a change. Run `git fetch` in the Homework 3 directory and then `git status` again. 
  
 This time notice how git tells you
  
@@ -50,13 +50,13 @@ This means that there is one commit (the message you wrote to yourself) on the b
 Open `answers.txt` on your local computer (NOT FROM GITHUB) with a text editor and fill out the remaining question for Task 1 in answers.txt
  
 ## Step 4: Making a commit. TODOs are here too
-Now that we've made a change to `answers.txt` we need to commit this change. Run `git status` in the Homework 4 directory. Notice how git lists the `Changes not staged for commit`. As expected, `answers.txt` is listed as a file that we have changed. 
+Now that we've made a change to `answers.txt` we need to commit this change. Run `git status` in the Homework 3 directory. Notice how git lists the `Changes not staged for commit`. As expected, `answers.txt` is listed as a file that we have changed. 
  
 To `commit` the change, we need to first `stage` `answers.txt` so it is ready to be committed. To do this, run `git add answers.txt` and then run `git status` again. git now tells us that `Changes to be committed:` includes `answers.txt`. To stage all changed files you can run `git add .`
  
 Perfect! We are now ready to make our commit. Run `git commit` and in the text editor that pops up, write a detailed commit message such as "Added description for 'git fetch' in answers.txt". After you save your commit message and exit the text editor, your commit is complete! If you would like to do it all in one line, you can use the `-m` flag. Let's say I want my message to be *Implemented smoother control flow*. I would run `git commit -m "Implemented smoother control flow"`. 
  
-Now if we go back to GitHub, we should see this change right???? WRONG! Remember from Task 1 that syncing your local git repository with the remote server (GitHub) is not automatic! To `push` your local changes to the remote server, run `git push`. Now check the GitHub Homework 4 repository again. BAM! There are your fancy new changes. *Note it might take a couple of seconds*. 
+Now if we go back to GitHub, we should see this change right???? WRONG! Remember from Task 1 that syncing your local git repository with the remote server (GitHub) is not automatic! To `push` your local changes to the remote server, run `git push`. Now check the GitHub Homework 3 repository again. BAM! There are your fancy new changes. *Note it might take a couple of seconds*. 
  
 *IMPORTANT NOTE: In a git repository, NONE of your work will be saved without making a commit. A commit is the only way for you to tell git that it needs to care about the changes you made. Because of this, a common and extremely important git mantra is COMMIT EARLY AND COMMIT OFTEN. Keeping this in mind as you work on more involved projects with git will save you hours of headache about losing files and undoing yesterday's stupid, dumb changes you thought were genius at 3 in the morning (I speak from experience).*
  
