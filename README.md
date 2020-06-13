@@ -71,6 +71,20 @@ Congratulations! You've successfully used a source control tool, Git! Now pictur
 ### TODO 5
 Complete the worksheet on GitHub. You can just open it in the browser and add your answers. Remember to hit the big green `Commit changes` button on the bottom when you're finished or else we can't grade it!!
  
+## Rubric
+|        Task         | Points |
+| ------------------- | ------ |
+| Answers.txt: Part 1 |    1   |
+| Answers.txt: Task 1 |    2   |
+| Answers.txt: Task 2 |    3   |
+| Worksheet.txt: Q1   |    2   |
+| Worksheet.txt: Q2   |    2   |
+| Worksheet.txt: Q3   |    2   |
+| Worksheet.txt: Q4   |    2   |
+| Worksheet.txt: Q5   |    2   |
+| Worksheet.txt: Q6   |    2   |
+| Worksheet.txt: Q7   |    2   |
+|       Total         |   20   |
  
 ## Reminder
 Please ask questions if you need them.  Reach out on Piazza, office hours, or PSOs. For grading issues on homeworks, please email one of your PSO TAs. If you email us, we will happily inform you to email your PSO TAs. Good luck :)
