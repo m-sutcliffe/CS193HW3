@@ -34,7 +34,7 @@ The third line `nothing to commit, working tree clean` tells you that you have n
 It is important to understand how useful git and GitHub can be for collaboration. For a moment, let's pretend that you and someone else are both working on solving Homework 3 together. We will **simulate** someone else pushing changes to Homework 4 while you are working on it locally. To do this, make sure you have already cloned the Homework 3 repo onto your local machine. Next, in your web browser, navigate to your Homework 3 repository on GitHub. 
  
 ### TODO 2
-Open the `answers.txt` file in GitHub from the web browser and under `Part 1`, write a message to yourself. This can be anything you want. Go ahead and commit this message to the `master` branch. Again, make sure this change is made from GitHub in your web browser!! 
+Open the `answers.txt` file in GitHub from the web browser click the pencil icon to edit the file. Under `Part 1`, write a message to yourself. This can be anything you want. Scroll to the bottom of the page where it says "Commit changes". Press `Commit changes` to commit this message to the `master` branch. Again, make sure this change is made from GitHub in your web browser!! 
  
 Now, locally in your terminal, run `git status` again in the Homework 3 directory. Notice the output this time! Wait... it's still the same. Why does `git status` tell us  `Your branch is up to date with 'origin/master'` if we just made a change to the `master` branch on GitHub?
  
